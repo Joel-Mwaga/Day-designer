@@ -24,7 +24,7 @@ An experienced software developer
 3. Open `index.html` in your browser to start using the application.
 
 
-## Usage
+ # Usage
 1. Open `index.html` in your browser.
 2. Fill in the signup form with your username, email, and password.
 3. Click the "Signup" button to create your account.
