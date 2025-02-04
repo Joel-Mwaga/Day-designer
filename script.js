@@ -3,7 +3,7 @@ function signup() {
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
     if (username.trim() === "" || email.trim() === "") {
-        alert("Please fill in both fields to continue.");
+        alert("Please fill in all fields to continue.");
         return;
     }
     
