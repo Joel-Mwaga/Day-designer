@@ -37,3 +37,32 @@ li {
 .hidden {
     display: none;
 }
+
+#signupPage {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+#signupPage h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#signupPage input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+#signupPage button {
+    background-color: #ff758c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#signupPage button:hover {
+    background-color: #ff5f6d;
+}
