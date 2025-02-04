@@ -31,4 +31,4 @@ Contributions are welcome! Please open an issue or submit a pull request.
 This project is licensed under the MIT License.
 
 # Copyright
-© 2023 Your Name. All rights reserved.
+© 2023 Your Name.All rights reserved.
