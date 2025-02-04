@@ -3,7 +3,8 @@ Your personal daily manager that keeps you healthy and can also work as an anti-
 
 # CREATOR
 <h1>Joel Mwaga<h1>
-<p>An experienced software developer</p>
+
+An experienced software developer
 
 # Features
 - Daily activity planner
