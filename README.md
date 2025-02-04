@@ -29,7 +29,7 @@ An experienced software developer
 2. Fill in the signup form with your username, email, and password.
 3. Click the "Signup" button to create your account.
 
-## Contributing
+ # Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
 
 # License
