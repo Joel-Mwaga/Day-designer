@@ -2,7 +2,7 @@
 Your personal daily manager that keeps you healthy and can also work as an anti-boredom application that arranges for your daily activities
 
 # CREATOR
-<p>Joel Mwaga</p>
+<## >Joel Mwaga</## >
 
 An experienced software developer
 
