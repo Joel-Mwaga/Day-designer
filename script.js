@@ -10,3 +10,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
         alert('Please fill in all fields.');
     }
 });
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    window.location.href = '/progress.html';
+});
