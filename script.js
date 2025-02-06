@@ -11,26 +11,4 @@ function signup() {
     localStorage.setItem('username', username);
     document.getElementById('userGreeting').innerText = username;
     document.getElementById('signupPage').classList.add('hidden');
-    document.getElementById('plannerPage').classList.remove('hidden');
-}
-document.querySelectorAll('.tick').forEach(button => {
-    button.addEventListener('click', function() {
-        this.parentElement.classList.toggle('crossed');
-    });
-});
-
-document.querySelectorAll('.remove').forEach(button => {
-    button.addEventListener('click', function() {
-        this.parentElement.remove();
-    });
-});
-document.addEventListener('DOMContentLoaded', function() {
-    signin();
-    const activities = document.querySelectorAll('.activity');
-
-    activities.forEach(activity => {
-        activity.addEventListener('click', function() {
-            alert(`Activity ${this.innerText} clicked!`);
-        });
-    });
-});
+    document.getElementById('plannerPage').classList.remove('hidden');}
