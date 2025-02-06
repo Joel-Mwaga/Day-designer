@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #3498db;
+    background-color: #56924e;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -45,7 +45,7 @@ main {
 
 .service-overview h1 {
     font-size: 36px;
-    color: #3498db;
+    color: #77db34;
 }
 
 .service-overview p {
@@ -90,7 +90,7 @@ main {
 }
 
 .features ul li strong {
-    color: #3498db;
+    color: #69db34;
     font-size: 20px;
 }
 
@@ -101,7 +101,7 @@ main {
 
 .get-started h2 {
     font-size: 28px;
-    color: #3498db;
+    color: #34db34;
 }
 
 .get-started p {
@@ -112,7 +112,7 @@ main {
 }
 
 .btn {
-    background-color: #3498db;
+    background-color: #47db34;
     color: white;
     text-decoration: none;
     padding: 15px 30px;
@@ -126,7 +126,7 @@ main {
 }
 
 footer {
-    background-color: #2c3e50;
+    background-color: #36502c;
     color: white;
     text-align: center;
     padding: 20px;
