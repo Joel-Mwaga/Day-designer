@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+header {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+.service-overview {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-overview h1 {
+    font-size: 36px;
+    color: #3498db;
+}
+
+.service-overview p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.features {
+    margin-top: 40px;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.features ul li {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.features ul li:hover {
+    transform: translateY(-10px);
+}
+
+.features ul li strong {
+    color: #3498db;
+    font-size: 20px;
+}
+
+.get-started {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.get-started h2 {
+    font-size: 28px;
+    color: #3498db;
+}
+
+.get-started p {
+    font-size: 18px;
+    margin-top: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

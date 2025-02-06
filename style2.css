@@ -1,0 +1,32 @@
+.about-container {
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+.about-container h2, .about-container h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.about-container p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.about-container ul {
+    list-style: none;
+    padding: 0;
+}
+.about-container li {
+    font-size: 16px;
+    margin: 8px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+body{
+    background-color: blueviolet;
+}

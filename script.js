@@ -1,41 +1,36 @@
+function signin() {
+    var storedUsername = localStorage.getItem('username');
+    if (storedUsername) {
+        document.getElementById('userGreeting').innerText = storedUsername;
+        document.getElementById('signupPage').classList.add('hidden');
+        document.getElementById('plannerPage').classList.remove('hidden');
+       }}
+
 function signup() {
-    let username = document.getElementById("username").value;
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
-    if (username.trim() === "" || email.trim() === "") {
-        alert("Please fill in all fields to continue.");
-        return;
-    }
-    
-    document.getElementById("signupPage").classList.add("hidden");
-    document.getElementById("plannerPage").classList.remove("hidden");
-    document.getElementById("userGreeting").innerText = username;
+    var username = document.getElementById('username').value;
+    localStorage.setItem('username', username);
+    document.getElementById('userGreeting').innerText = username;
+    document.getElementById('signupPage').classList.add('hidden');
+    document.getElementById('plannerPage').classList.remove('hidden');
 }
+document.querySelectorAll('.tick').forEach(button => {
+    button.addEventListener('click', function() {
+        this.parentElement.classList.toggle('crossed');
+    });
+});
 
-function addActivity() {
-    let activityInput = document.getElementById("activity").value;
-    let timeInput = document.getElementById("time").value;
-    
-    if (activityInput.trim() === "" || timeInput === "") {
-        alert("Oops! Please enter both activity and time.");
-        return;
-    }
+document.querySelectorAll('.remove').forEach(button => {
+    button.addEventListener('click', function() {
+        this.parentElement.remove();
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    signin();
+    const activities = document.querySelectorAll('.activity');
 
-    let ul = document.getElementById("activityList");
-    let li = document.createElement("li");
-    li.innerHTML = `${timeInput} - ${activityInput} <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button>`;
-    ul.appendChild(li);
-    
-    document.getElementById("activity").value = "";
-    document.getElementById("time").value = "";
-}
-
-function completeActivity(button) {
-    let li = button.parentElement;
-    li.classList.toggle("completed");
-}
-
-function removeActivity(button) {
-    let li = button.parentElement;
-    li.remove();
-}
+    activities.forEach(activity => {
+        activity.addEventListener('click', function() {
+            alert(`Activity ${this.innerText} clicked!`);
+        });
+    });
+});

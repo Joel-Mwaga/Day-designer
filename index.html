@@ -3,37 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day-designer Signup</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Day designer</title>
 </head>
+<link rel="stylesheet" href="style.css">
 <body>
-    <div id="signupPage" class="container">
-        <h2>Welcome! Let's Get Started</h2>
-        <p>Create an account to manage your daily activities.</p>
-        <input type="text" id="username" placeholder="Enter your name">
-        <input type="email" id="email" placeholder="Enter your email">
-        <input type="password" id="password" placeholder="Enter your password">
-        <button onclick="signup()">Sign Up</button>
-    </div>
+    <header>
+        <h1>Day Designer</h1>
+        <p>Your ultimate daily planner</p>
+    </header>
+    <section id="navbar">
+        <div class="nav">
+            <div class="logo">
+                <img src="Day-designer-logo.webp" alt="">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="intro">
+        <div class="intro">
+            <h1>Welcome to Day Designer</h1>
+            <p>Day Designer is your ultimate tool to plan and organize your daily activities. Whether it's managing your finances, tracking your health, or scheduling your daily tasks, we've got you covered. Let's make every day productive and fulfilling!</p>
+        </div>
+    </section>
+    
+    <section id="activities">
+        <div id="signupPage" class="container">
+            <h2>Welcome! Let's Get Started</h2>
+            <p>Create an account to manage your daily activities.</p>
+            <input type="text" id="username" placeholder="Enter your name">
+            <input type="email" id="email" placeholder="Enter your email">
+            <button onclick="signup()">Sign Up</button>
+        </div>
 
-    <div id="plannerPage" class="container hidden">
-        <h2>Plan Your Day, <span id="userGreeting"></span>!</h2>
-        <p>Stay organized and productive by listing your daily activities.</p>
-        <input type="text" id="activity" placeholder="What do you need to do?">
-        <input type="time" id="time">
-        <button onclick="addActivity()">Add to Planner</button>
-        <ul id="activityList">
-            <li>07:00 - 08:00 Wake up(pray,take a shower)<button onclick="completeActivity(this)">✔</button><button onclick="removeActivity(this)">❌</button></li>
-            <li>08:00 - 09:00 Morning Exercise <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
-            <li>09:00 - 10:00 Enjoy Breakfast <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
-            <li>10:00 - 13:00 Work or Study <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
-            <li>13:00 - 15:00 Take a Lunch Break <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
-            <li>15:00 - 18:00 Go for a Walk <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
-            <li>18:00 - 20:00 Have Dinner <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
-            <li>20:00 - 22:00 Relax and Unwind <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
-            <li>22:00 - 07:00 Get Some Sleep <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
-        </ul>
-    </div>
+        <div id="plannerPage" class="main-content hidden">
+            <div class="section" id="financeSection">
+                <h3>Financial Manager</h3>
+                <p>Manage your daily financial tasks</p>
+                <ul id="financeList">
+                    <li>08:00 - 💰Review daily budget <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>12:00 - 💳Pay bills <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>15:00 - 💵Withdraw cash <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>18:00 - 💸Buy groceries <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>20:00 - 📈Invest in stocks <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>22:00 - 💳Update expense tracker <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                </ul>
+            </div>
+    
+            <div class="section" id="activitySection">
+                <h2>Welcome to Day-Designer, <span id="userGreeting"></span>!</h2>
+                <p>Stay organized and productive by listing your daily activities.</p>
+                <ul>
+                    <li>06:30 - 🏋️Morning Exercise <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>07:30 - 🍳Enjoy Breakfast <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>08:00 - 📖Read or Meditate <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>12:00 - 🍲Lunch Time <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>15:00 - 📚Study or Work <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>18:00 - 🍜Dinner Time <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>20:00 - 🎥Watch a movie <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>22:00 - 🛌Go to bed <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                </ul>
+            </div>
+    
+            <div class="section" id="healthSection">
+                <h3>Health Tracker</h3>
+                <p>Track your health-related activities</p>
+                <ul id="healthList">
+                    <li>07:30 - 🥤 Drink a glass of water <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>08:00 - 🍏 Eat a fruit <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>12:00 - 🥗 Eat a salad <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>15:00 - 🏃‍♂️ Take a walk <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>18:00 - 🥦 Eat vegetables <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>20:00 - 🍵 Drink green tea <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                    <li>22:00 - 🧘‍♂️ Meditate <button onclick="completeActivity(this)">✔</button> <button onclick="removeActivity(this)">❌</button></li>
+                </ul>
+            </div>
+        </div>
+    </section> 
     <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2025 Day-Designer. All rights reserved.</p>
+    </footer>
 </body>
 </html>
