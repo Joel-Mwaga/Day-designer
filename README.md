@@ -19,7 +19,7 @@ An experienced software developer
     ```
 2. Navigate to the project directory:
     ```sh
-    cd day-designer
+    cd Day-designer
     ```
 3. Open `index.html` in your browser to start using the application.
 
@@ -36,4 +36,4 @@ Contributions are welcome! Please open an issue or submit a pull request.
 This project is licensed under the MIT License.
 
 # Copyright
-© 2025 Your Name.All rights reserved.
+© 2025 Day-designer.All rights reserved.
