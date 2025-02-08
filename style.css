@@ -27,6 +27,7 @@ header {
 
 #navbar .logo img {
     height: 50px;
+    border-radius: 50px;
 }
 
 #navbar ul {
